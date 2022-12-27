@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Net_News.Interfaces;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,7 +11,7 @@ namespace Net_News.Models
     public class Phone
     {
         public string Number { get; set; }
-        public string Provider { get; set; }
+        public IProvider Provider { get; set; }
         public double Balance { get; set; }
         public List<Contact> Contacts { get; set; }
 
@@ -86,6 +87,28 @@ namespace Net_News.Models
             else {
                 Console.WriteLine("You dont have any contact");
             }
+        }
+
+        public void showBalance()
+        {
+            if (this.Balance < 1)
+            {
+                Console.WriteLine("Your balance is: " + (int)(((decimal)this.Balance % 1) * 100) + " cent");
+            }
+            else 
+            {
+                Console.WriteLine(
+                    "Your balance is: " + (int)this.Balance + " azn " +
+                    (int)(((decimal)this.Balance % 1) * 100) + " cent"
+                    );
+            }
+        }
+
+        public void BorrowBalance(int code) 
+        {
+            this.Balance += this.Provider.borrowBalance(code);
+
+            Console.WriteLine("You have borrow " + this.Provider.borrowBalance(code) + " azn");
         }
 
 

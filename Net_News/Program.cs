@@ -1,10 +1,16 @@
-﻿using Net_News.Models;
+﻿using Net_News.Interfaces;
+using Net_News.Models;
+using Net_News.Models.Provider;
+using System.Collections.Generic;
 
 public class Program
 {
     public static void Main()
     {
         Phone phone = new Phone();
+
+        IProvider provider;
+
 
         while (true)
         {
@@ -26,6 +32,9 @@ public class Program
                         phone.Number = userPhoneNumber;
                         phone.Balance = userBalance;
 
+                        provider = new Nar();
+
+                        phone.Provider = provider;
 
                         while (true)
                         {
@@ -86,8 +95,31 @@ public class Program
                                 case "5":
                                     break;
                                 case "6":
+                                    Console.Clear();
+
+                                    phone.showBalance();
+
+                                    Console.ReadLine();
                                     break;
                                 case "7":
+                                    Console.Clear();
+
+                                    provider.showBorrowCodes();
+
+                                    Console.Write("\nPlease choose borrow balance ID: ");
+                                    int userBorrowCode = Convert.ToInt32(Console.ReadLine());
+
+                                    // DYNAMIC
+                                    if (userBorrowCode > 0 && userBorrowCode < 4)
+                                    {
+                                        phone.BorrowBalance(userBorrowCode);
+                                    }
+                                    else
+                                    {
+                                        Console.WriteLine("Please choose correct ID!");    
+                                    }
+
+                                    Console.ReadLine();
                                     break;
                                 case "8":
                                     Console.WriteLine("Thanks for using me! :D");                                

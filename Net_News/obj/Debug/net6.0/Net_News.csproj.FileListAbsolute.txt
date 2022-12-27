@@ -1,0 +1,15 @@
+C:\Users\Zulfugarka\source\repos\Net_News\Net_News\bin\Debug\net6.0\Net_News.exe
+C:\Users\Zulfugarka\source\repos\Net_News\Net_News\bin\Debug\net6.0\Net_News.deps.json
+C:\Users\Zulfugarka\source\repos\Net_News\Net_News\bin\Debug\net6.0\Net_News.runtimeconfig.json
+C:\Users\Zulfugarka\source\repos\Net_News\Net_News\bin\Debug\net6.0\Net_News.dll
+C:\Users\Zulfugarka\source\repos\Net_News\Net_News\bin\Debug\net6.0\Net_News.pdb
+C:\Users\Zulfugarka\source\repos\Net_News\Net_News\obj\Debug\net6.0\Net_News.csproj.AssemblyReference.cache
+C:\Users\Zulfugarka\source\repos\Net_News\Net_News\obj\Debug\net6.0\Net_News.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Zulfugarka\source\repos\Net_News\Net_News\obj\Debug\net6.0\Net_News.AssemblyInfoInputs.cache
+C:\Users\Zulfugarka\source\repos\Net_News\Net_News\obj\Debug\net6.0\Net_News.AssemblyInfo.cs
+C:\Users\Zulfugarka\source\repos\Net_News\Net_News\obj\Debug\net6.0\Net_News.csproj.CoreCompileInputs.cache
+C:\Users\Zulfugarka\source\repos\Net_News\Net_News\obj\Debug\net6.0\Net_News.dll
+C:\Users\Zulfugarka\source\repos\Net_News\Net_News\obj\Debug\net6.0\refint\Net_News.dll
+C:\Users\Zulfugarka\source\repos\Net_News\Net_News\obj\Debug\net6.0\Net_News.pdb
+C:\Users\Zulfugarka\source\repos\Net_News\Net_News\obj\Debug\net6.0\Net_News.genruntimeconfig.cache
+C:\Users\Zulfugarka\source\repos\Net_News\Net_News\obj\Debug\net6.0\ref\Net_News.dll
